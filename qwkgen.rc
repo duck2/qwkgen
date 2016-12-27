@@ -1,0 +1,4 @@
+#!/usr/bin/env rc
+
+fn template { bin/template.awk $* | rc $rcargs }
+
