@@ -1,0 +1,46 @@
+html, body {
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+	font-family: Helvetica;
+}
+
+a {
+	color: #222;
+}
+
+.header {
+	background-color: #eef;
+	top:0px;
+	padding: 0.8em;
+}
+
+.header a {
+	padding: 0.8em;
+	height: 100%;
+}
+
+.header a:hover {
+	background-color: #dde;
+}
+
+.swallow {
+	max-width: 40em;
+	margin: auto;
+	color: #222;
+}
+
+.post {
+	padding: 1em;
+}
+
+.post a {
+	color: #55a;
+	text-decoration: none;
+}
+
+.footer {
+	padding: 1em;
+	margin: auto;
+	text-align: center;
+}

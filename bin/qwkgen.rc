@@ -1,6 +1,0 @@
-#!/usr/bin/env rc
-
-out=./www/
-
-fn template { bin/template.awk $* | rc $rcargs }
-
