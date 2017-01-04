@@ -23,8 +23,9 @@ $OUTDIR/style.css: lib/style.css
 posts:V: $OUTS
 
 $OUTDIR/%.html: lib/%.md tpl/post.tpl
-	bin/template.awk tpl/post.tpl > /tmp/tmp.rc
-	rc /tmp/tmp.rc $prereq > $target
+	bin/template.awk tpl/post.tpl > /tmp/post.rc
+	rc /tmp/post.rc $prereq > $target
 
 clean:V:
 	rm -rf $OUTDIR bin/mkd2html
+	rm -f /tmp/post.rc

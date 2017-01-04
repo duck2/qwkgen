@@ -17,7 +17,6 @@ for(i in `{ls -r lib/*.md}){
 		echo '[<a href="' ^ $target ^ '">more...</a>]'
 	}
 	echo '</div>'
-	echo '<hr />'
 }
 %}
 </div>
