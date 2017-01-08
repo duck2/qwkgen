@@ -40,7 +40,17 @@ a {
 	text-decoration: none;
 }
 
+.previous a {
+	color: #55a;
+	text-decoration: none;
+}
+
+.previous h1 {
+	font-size: 1.2em;
+}
+
 .footer {
 	padding: 0.5em;
 	text-align: center;
 }
+

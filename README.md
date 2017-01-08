@@ -9,9 +9,11 @@ a fork of [libsoldout][5] is used as the markdown engine.
 
 ## dependencies
 
-a C compiler, GNU or BSD make to make libsoldout.
+a C compiler to make libsoldout.
 
 the `9base` package or [plan9port][6] for mk and rc.
+
+`grep POSIX` for parts not working with plan9 tools.
 
 ## usage
 
