@@ -17,7 +17,9 @@ the `9base` package or [plan9port][6] for mk and rc.
 
 ## usage
 
-`mk`. ultimately, a static site generator is a build system and `mk` handles it quite well. default output directory is `_site/`.
+clone with `git clone --recursive` to clone together with libsoldout.
+
+`mk` gets the ball rolling. ultimately, a static site generator is a build system and `mk` handles it quite well. default output directory is `_site/`.
 
 posts are supposed to go to lib/*.md with a prefix of YYYY-MM-DD tag- `like 2016-10-10-the_perils_of_being_a_horse.md` or something.
 
