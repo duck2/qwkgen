@@ -1,8 +1,8 @@
 # qwkgen
 
-qwkgen is a [mkfile][0] cobbled together with a set of tools to generate my [blog][1].
+qwkgen is a [mkfile][0] cobbled together with some templates and a set of tools to generate my [blog][1].
 
-qwkgen is not configurable/extensible by "config files"- its scope is not general use. however the mkfile is simple enough to maintain a personal fork.
+qwkgen is not configurable/extensible by "config files"- its scope is not general use. however it should be easy to maintain a personal fork if you are familiar with all the sed courtship dance.
 
 [werc][2]'s [template.awk][3] is used as the [template language][4].
 a fork of [libsoldout][5] is used as the markdown engine.
