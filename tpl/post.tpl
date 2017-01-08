@@ -24,8 +24,8 @@ sed -n  '2, $p' $1 | ./bin/mkd2html
 %{
 # sed dance to get previous posts. shows last 5(sed 5q).
 # mkd2html will emit <h1> but we handle that in CSS ../lib/style.css
-libless=`{echo $1 | sed -n -e 's:lib/\(.*\):\1:p'}
-previous=`{ls -r lib/*.md | sed -e '0,/' ^ $libless ^ '/d' | sed 5q}
+libless=`{echo $1 | sed -n -e 's:lib/\(.*\):\1:p'} # POSIX
+previous=`{ls -r lib/*.md | sed -n '/' ^ $libless ^ '/,$p' | sed -n '2,5p'}
 for(i in $previous){
 	echo '<a href="' ^ `{mkhtml $i} ^ '">'
 	sed 1q $i | ./bin/mkd2html
