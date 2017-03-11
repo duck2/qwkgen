@@ -9,6 +9,8 @@ a {
 	color: #222;
 }
 
+img {max-width: 95%; display: block; margin: auto;}
+
 .header {
 	background-color: #eef;
 	top:0px;
@@ -25,7 +27,7 @@ a {
 }
 
 .swallow {
-	max-width: 40em;
+	max-width: 45em;
 	margin: auto;
 	color: #222;
 	min-height: 100%;
