@@ -27,7 +27,7 @@ img {max-width: 95%; display: block; margin: auto;}
 }
 
 .swallow {
-	max-width: 45em;
+	max-width: 42em;
 	margin: auto;
 	color: #222;
 	min-height: 100%;
@@ -36,6 +36,8 @@ img {max-width: 95%; display: block; margin: auto;}
 .post {
 	padding: 1em;
 }
+
+p {line-height: 1.4em;}
 
 .post a {
 	color: #55a;
