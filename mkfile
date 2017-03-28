@@ -35,7 +35,7 @@ $OUTDIR/%.html: lib/%.md tpl/post.tpl tpl/header.inc tpl/lowhdr.inc
 
 $OUTDIR/%.png: lib/%.png
 	cp -f $prereq $target
-	optipng -o5 $target > /dev/null 2>&1
+	optipng -o5 $target > /dev/null 2>&1 || echo "no optipng."
 
 posts:V: $OUTDIR/index.html $OUTDIR/who.html $OUTS $IMS
 
