@@ -12,7 +12,7 @@ duck2 is eee student occasionally poking around with CS concepts.
 I currently find [modern portfolio theory][port] to be a nice approximation of stuff.
 
 Things I particularly like: Simple software. languages without stdlib. graphics. [Acme][acme].<br>
-Things I particularly dislike: Java, C#, the whole npm ecosystem, FSF.
+Things I particularly dislike: Java, C#, the whole npm ecosystem.
 
 here is my [twitter][twitter], [github][gh]. I take the lib- prefix if duck2 is taken before.
 

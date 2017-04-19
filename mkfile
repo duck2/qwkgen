@@ -48,5 +48,5 @@ $OUTDIR/rt/index.html: `{ls lib/rt/*.md} tpl/rt/index.tpl
 rt:V: $OUTDIR/rt $OUTDIR/rt/index.html $RT $RTIMS
 
 clean:V:
-	rm -rf $OUTS $RT $RTIMS bin/mkd2html
+	rm -rf $OUTDIR/index.html $OUTDIR/who.html $OUTDIR/style.css $OUTS $RT $RTIMS bin/mkd2html
 	rm -f /tmp/post.rc
