@@ -19,7 +19,7 @@ here is my [twitter][twitter], [github][gh]. I take the lib- prefix if duck2 is 
 [port]: https://en.wikipedia.org/wiki/Modern_portfolio_theory
 [acme]: http://acme.cat-v.org/
 [twitter]: https://twitter.com/libduck2
-[gh]: https://github.com/libduck2
+[gh]: https://github.com/duck2
 
 ' | ./bin/mkd2html
 %}
@@ -28,5 +28,5 @@ here is my [twitter][twitter], [github][gh]. I take the lib- prefix if duck2 is 
 </div>
 <hr />
 <div class="footer">
-generator is <a href="https://github.com/libduck2/qwkgen">qwkgen</a>. all text is licensed under CC0.
+generator is <a href="https://github.com/duck2/qwkgen">qwkgen</a>. all text is licensed under CC0.
 </div>

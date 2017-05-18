@@ -28,7 +28,7 @@ any configuration is done by playing with the `mkfile`. mk is very convenient to
 [0]: http://doc.cat-v.org/plan_9/4th_edition/papers/mk
 [1]: http://duck2.lt/
 [2]: http://werc.cat-v.org/
-[3]: https://github.com/libduck2/qwkgen/blob/master/bin/template.awk
+[3]: https://github.com/duck2/qwkgen/blob/master/bin/template.awk
 [4]: http://werc.cat-v.org/docs/rc-template-lang
 [5]: https://github.com/faelys/libsoldout
 [6]: https://github.com/9fans/plan9port
