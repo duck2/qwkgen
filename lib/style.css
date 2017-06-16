@@ -9,7 +9,7 @@ a {
 	color: #222;
 }
 
-img {max-width: 95%; display: block; margin: auto;}
+img, video {max-width: 95%; display: block; margin: auto;}
 
 .header {
 	background-color: #eef;

@@ -5,12 +5,16 @@ OUTDIR=_site
 
 POSTS=`{ls -f lib/*.md}
 IMS=`{ls -f lib/*.png}
+WEBMS=`{ls -f lib/*.webm}
 OUTS=${POSTS:lib/%.md=$OUTDIR/%.html}
 
 RTRAW=`{ls -f lib/rt/*.md}
-RTRAWIMS = `{ls -f lib/rt/*.png}
+RTRAWIMS=`{ls -f lib/rt/*.png}
+RTRAWWEBMS=`{ls -f lib/rt/*.webm}
+
 RT=${RTRAW:lib/rt/%.md=$OUTDIR/rt/%.html}
 RTIMS=${RTRAWIMS:lib/rt/%.png=$OUTDIR/rt/%.png}
+RTWEBMS=${RTRAWWEBMS:lib/rt/%.webm=$OUTDIR/rt/%.webm}
 
 all:V: $OUTDIR bin/mkd2html $OUTDIR/style.css posts $OUTDIR/rt rt
 
@@ -37,6 +41,9 @@ $OUTDIR/%.png: lib/%.png
 	cp -f $prereq $target
 	optipng -o5 $target > /dev/null 2>&1 || echo "no optipng."
 
+$OUTDIR/%.webm: lib/%.webm
+	cp -f $prereq $target
+
 posts:V: $OUTDIR/index.html $OUTDIR/who.html $OUTS $IMS
 
 $OUTDIR/rt:
@@ -45,7 +52,7 @@ $OUTDIR/rt:
 $OUTDIR/rt/index.html: `{ls lib/rt/*.md} tpl/rt/index.tpl
 	bin/template.awk tpl/rt/index.tpl | rc > $target
 
-rt:V: $OUTDIR/rt $OUTDIR/rt/index.html $RT $RTIMS
+rt:V: $OUTDIR/rt $OUTDIR/rt/index.html $RT $RTIMS $RTWEBMS
 
 clean:V:
 	rm -rf $OUTDIR/index.html $OUTDIR/who.html $OUTDIR/style.css $OUTS $RT $RTIMS bin/mkd2html
