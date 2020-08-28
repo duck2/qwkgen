@@ -18,7 +18,7 @@ Clone with `git clone --recursive`.
 
 `mk` gets the ball rolling. The default output directory is `_site/`.
 
-Place posts in lib/*.md with a prefix of YYYY-MM-DD tag. An example is `2016-10-10-the_perils_of_being_a_horse.md`.
+Place posts in `lib/*.md` with a date prefix in `YYYY-MM-DD` format. An example is `2016-10-10-the_perils_of_being_a_horse.md`.
 
 Tweak the mkfile and the templates to your interest.
 
