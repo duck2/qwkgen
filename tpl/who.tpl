@@ -1,32 +1,18 @@
-% cat tpl/header.inc
+% rc ./tpl/header.rc
 
 <div class="swallow">
-<div class="post">
-<a href="who.html"><h1>who?</h1></a>
+	<div class="post">
+		<a href="who.html"><h1>who?</h1></a>
+		%{
+		echo -n '
+I''m an EEE student with a focus on computers and logic design.
 
-%{
-echo -n '
+Things I particularly like are [Acme](http://acme.cat-v.org/), computer graphics, chemistry and [open source FPGA tooling](https://symbiflow.github.io/).
 
-duck2 is eee student occasionally poking around with CS concepts.
-
-I currently find [modern portfolio theory][port] to be a nice approximation of stuff.
-
-Things I particularly like: Simple software. languages without stdlib. graphics. [Acme][acme].<br>
-Things I particularly dislike: Java, C#, the whole npm ecosystem.
-
-here is my [twitter][twitter], [github][gh]. I take the lib- prefix if duck2 is taken before.
-
-[port]: https://en.wikipedia.org/wiki/Modern_portfolio_theory
-[acme]: http://acme.cat-v.org/
-[twitter]: https://twitter.com/libduck2
-[gh]: https://github.com/duck2
-
+My projects can be found on this blog and my [GitHub page](https://github.com/duck2).
 ' | ./bin/mkd2html
-%}
+		%}
+	</div>
+</div>
 
-</div>
-</div>
-<hr />
-<div class="footer">
-generator is <a href="https://github.com/duck2/qwkgen">qwkgen</a>. all text is licensed under CC0.
-</div>
+% rc ./tpl/footer.rc

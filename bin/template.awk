@@ -1,4 +1,3 @@
-#!/usr/bin/awk -f
 function pr(str) {
 	if(lastc !~ "[{(]")
 		gsub(/'/, "''", str)
