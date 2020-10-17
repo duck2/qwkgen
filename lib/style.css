@@ -60,7 +60,8 @@ canvas {
 pre {
 	background: #eee;
 	padding: 8px;
-	line-height: 1.4em;
+	max-width: 100%;
+	overflow: auto;
 }
 
 code {

@@ -1,12 +1,12 @@
 #!/bin/sh
 
-# todo: add caching
-
 latex -v > /dev/null || exit 1;
 dvipng -v > /dev/null || exit 1;
 optipng -v > /dev/null || exit 1;
 
 HASH=$(echo $1 | 9 md5sum | 9 awk '{print $1}')
+
+cat /tmp/$HASH.cache 2>/dev/null && exit 0;
 
 cat << EOF | latex -jobname=$HASH -- > /dev/null 2>&1
 \documentclass[11pt]{article}
@@ -20,5 +20,5 @@ EOF
 dvipng -T tight -D 120 $HASH.dvi -o $HASH.png > /dev/null 2>&1
 optipng $HASH.png > /dev/null 2>&1
 rm $HASH.aux $HASH.log $HASH.dvi
-echo -n $(base64 $HASH.png)
+echo -n $(base64 $HASH.png | tee /tmp/$HASH.cache)
 rm $HASH.png
