@@ -2,7 +2,11 @@
 
 # todo: add caching
 
-HASH=$(echo $1 | 9 md5sum)
+latex -v > /dev/null || exit 1;
+dvipng -v > /dev/null || exit 1;
+optipng -v > /dev/null || exit 1;
+
+HASH=$(echo $1 | 9 md5sum | 9 awk '{print $1}')
 
 cat << EOF | latex -jobname=$HASH -- > /dev/null 2>&1
 \documentclass[11pt]{article}

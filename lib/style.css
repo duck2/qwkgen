@@ -50,7 +50,7 @@ canvas {
 
 .post {
 	padding: 1em;
-	line-height: 1.4em;
+	line-height: 1.4;
 }
 
 .post a {
