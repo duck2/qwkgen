@@ -5,12 +5,13 @@ qwkgen is a [mkfile][0] cobbled together with some templates and 9base utilities
 The program is not configurable. However, the mkfile and the template engine are simple enough to maintain a personal fork.
 
 [werc][2]'s [template.awk][3] is used as the [template language][4].
-A fork of [libsoldout][5] is used as the markdown engine.
+A fork of [libsoldout][5] is used as the markdown engine. It is able to render math to inlined base64 png using the `bin/latex2png` script.
 
 ## Dependencies
 
 - A C compiler to build libsoldout.
 - The `9base` package or [plan9port][6] for mk and rc. (I never tried to run this in Plan 9 itself.)
+- For math, a form of latex, dvipng and optipng.
 
 ## Usage
 

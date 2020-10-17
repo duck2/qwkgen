@@ -9,7 +9,22 @@ a {
 	color: #222;
 }
 
-img, video {max-width: 95%; display: block; margin: auto;}
+img, video {
+	max-width: 95%;
+	display: block;
+	margin: auto;
+}
+
+img.inline-math {
+	display: inline;
+	vertical-align: middle;
+}
+
+canvas {
+	border: 1px solid black;
+	display: block;
+	margin: auto;
+}
 
 .header {
 	background-color: #eef;
@@ -35,13 +50,38 @@ img, video {max-width: 95%; display: block; margin: auto;}
 
 .post {
 	padding: 1em;
+	line-height: 1.4em;
 }
-
-p {line-height: 1.4em;}
 
 .post a {
 	color: #55a;
-	text-decoration: none;
+}
+
+pre {
+	background: #eee;
+	padding: 8px;
+	line-height: 1.4em;
+}
+
+code {
+	background: #eee;
+}
+
+blockquote {
+	margin: 0 0 0 16px;
+	padding-left: 16px;
+	border-left: 4px solid #ddd;
+	font-style: italic;
+	color: #555;
+}
+
+h2 {
+	margin-top: 36px;
+}
+
+ul, ol {
+	padding-left: 32px;
+	margin: 0px;
 }
 
 .previous a {

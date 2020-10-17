@@ -7,7 +7,7 @@ BASE_URL=$OUTDIR  # change to publish
 DIRS=`{9 du lib | 9 awk '{print $2}'}
 POSTS=`{9 du -a lib | 9 awk '{print $2}' | 9 grep ".+md$"}
 OTHERS=`{9 du -a tpl | 9 awk '{print $2}' | 9 grep -v "post.tpl" | 9 grep ".+tpl$"}
-STATIC=`{9 du -a lib | 9 awk '{print $2}' | 9 grep ".+(png|webm|css)$"}
+STATIC=`{9 du -a lib | 9 awk '{print $2}' | 9 grep ".+(png|webm|css|js)$"}
 
 RCS=`{9 du -a tpl | 9 awk '{print $2}' | 9 grep ".+rc$"}
 
@@ -27,7 +27,7 @@ $OUT_DIRS:
 # if a prereq exists(e.g. files in $INCS), mk assumes all other prereqs exist and
 # looks for files like tpl/2017-whatever.tpl . so we specify them separately
 
-$OUTDIR/%.html: $INCS tpl/post.tpl $POSTS
+$OUTDIR/%.html: $RCS tpl/post.tpl $POSTS
 
 $OUTDIR/%.html: tpl/%.tpl
 	awk -f bin/template.awk tpl/$stem.tpl | rc > $target

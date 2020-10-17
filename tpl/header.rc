@@ -9,4 +9,5 @@ echo -n '<!DOCTYPE html>
 <a href="'$BASE_URL'/index.html">duck2.lt</a>
 <a href="'$BASE_URL'/who.html">who?</a>
 <a href="'$BASE_URL'/rt/index.html">rt</a>
+<a href="'$BASE_URL'/gpu/index.html">gpu</a>
 </div>'
