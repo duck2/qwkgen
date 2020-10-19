@@ -18,7 +18,7 @@ $1
 EOF
 
 dvipng -T tight -D 120 $HASH.dvi -o $HASH.png > /dev/null 2>&1
-optipng $HASH.png > /dev/null 2>&1
+optipng -strip all $HASH.png > /dev/null 2>&1
 rm $HASH.aux $HASH.log $HASH.dvi
 echo -n $(base64 $HASH.png | tee /tmp/$HASH.cache)
 rm $HASH.png
