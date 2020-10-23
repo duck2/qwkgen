@@ -1,9 +1,5 @@
 #!/bin/sh
 
-latex -v > /dev/null || exit 1;
-dvipng -v > /dev/null || exit 1;
-optipng -v > /dev/null || exit 1;
-
 HASH=$(echo $1 | 9 md5sum | 9 awk '{print $1}')
 
 cat /tmp/$HASH.cache 2>/dev/null && exit 0;
