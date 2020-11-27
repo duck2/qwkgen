@@ -779,9 +779,9 @@ const struct mkd_renderer d2_html = {
 	rndr_list,
 	rndr_listitem,
 	rndr_paragraph,
-	discount_table,
-	discount_table_cell,
-	discount_table_row,
+	NULL,
+	NULL,
+	NULL,
 	d2_blockmath,
 
 	rndr_autolink,

@@ -76,6 +76,17 @@ blockquote {
 	color: #555;
 }
 
+table {
+	display: block;
+	max-width: 100%;
+	overflow: auto;
+}
+
+table td, th {
+	padding: 4px 8px;
+	background-color: #eee;
+}
+
 h2 {
 	margin-top: 36px;
 }
