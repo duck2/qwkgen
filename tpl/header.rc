@@ -1,12 +1,12 @@
 echo -n '<!DOCTYPE html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>duck2.lt</title>
+<title>duck2.tech</title>
 
 <link rel="stylesheet" href="'$BASE_URL'/style.css">
 
 <div class="header">
-<a href="'$BASE_URL'/index.html">duck2.lt</a>
+<a href="'$BASE_URL'/index.html">duck2.tech</a>
 <a href="'$BASE_URL'/who.html">who?</a>
 <a href="'$BASE_URL'/rt/index.html">rt</a>
 <a href="'$BASE_URL'/gpu/index.html">gpu</a>
